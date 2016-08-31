@@ -1,0 +1,21 @@
+{
+	"aws": {
+		"region": "us-east-1",
+		"tags": {
+			"ENVIRONMENT": "Production"
+		},
+		"userdata": {
+			"hostname": "%s",
+			"roles": []
+		}
+	},
+	"openstack": {
+		"tenant_name": "TEST_1",
+		"auth_url": "http://192.168.0.50:5000/v2.0",
+		"userdata": {
+			"hostname": "%s",
+			"roles": []
+		}
+	}
+	
+}

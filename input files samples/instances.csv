@@ -1,0 +1,3 @@
+instance,security_groups,subnet,vpc,access_key_name,ip,public_ip,type,roles,run
+machine1,vpc1_machine1&default,vpc1_machine1_a,sic,vpc1_machine1_key,10.1.0.4,NO,m3.medium,"[""default""]",YES
+machine2,vpc2_machine2,vpc2_machine2_b,sic,vpc1_machine2_key,10.2.0.4,NO,m3.medium,"[""wordpress-server"",""default""]",YES

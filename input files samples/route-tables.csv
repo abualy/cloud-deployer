@@ -1,0 +1,2 @@
+route_table,vpc,route_type,route,cidr
+nat,vpc1,peering,VPC_PEERING,10.1.0.0/16

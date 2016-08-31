@@ -1,0 +1,3 @@
+subnet,acl,vpc,cidr,availability_zone,instances,route_table,description
+vpc1_machine1_a,vpc1_machine1,vpc1,10.1.0.0/24,us-east-1a,machine1,nat,
+vpc2_machine2_b,vpc2_machine2,vpc2,10.2.0.0/24,us-east-1b,machine2,nat,

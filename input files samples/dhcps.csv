@@ -1,0 +1,3 @@
+dhcp,vpc,domain_name,domain_server
+dhcp_vpc1,vpc1,vpc1,dns.vpc1
+dhcp_vpc2,vpc2,vpc2,dns.vpc2

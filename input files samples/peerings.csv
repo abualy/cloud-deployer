@@ -1,0 +1,3 @@
+peering,vpc,vpc_peer
+VPC_PEERING,vpc1,vpc2
+

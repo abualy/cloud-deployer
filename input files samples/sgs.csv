@@ -1,0 +1,5 @@
+security_group,acl,sg_description,vpc,ingress/egress,src/dst,cidr,from,to,tcp,udp,icmp,description
+default,default,default security group,vpc1,ingress,all,54.108.22.54/32,22,22,*,,,ssh access from outside
+vpc1_machine1,vpc1_machine1,machine1 security group,vpc1,egress,machine2,10.2.0.4/32/32,22,22,*,,,ssh contact
+vpc2_machine2,vpc2_machine2,machine2 security group,vpc2,ingress,machine1,0.0.0.0/0,80,80,*,,,ssh contact
+vpc2_machine2,vpc2_machine2,machine2 security group,vpc2,ingress,machine1,10.1.0.4/32,22,22,*,,,http contact

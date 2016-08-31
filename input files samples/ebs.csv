@@ -1,0 +1,3 @@
+ebs,size,vpc,zone,instance,description,run
+sample,100,vpc2,us-east-1b,machine2,wordpress_data,YES
+
