@@ -1,2 +1,2 @@
 elb,vpc,subnets,security_groups,listeners,servers,policy_name,policy_type,attributes,ports
-elb_vpc2,elb_vpc2,default,80$80$tcp&443$443$tcp,machine2.vpc2,my_cutsom-ProxyProtocol-policy,ProxyProtocolPolicyType,ProxyProtocol,80%443
+elb_vpc2,vpc2,elb_vpc2,default,80$80$tcp&443$443$tcp,machine2.vpc2,my_cutsom-ProxyProtocol-policy,ProxyProtocolPolicyType,ProxyProtocol,80%443
