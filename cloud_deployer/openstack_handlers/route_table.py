@@ -40,7 +40,7 @@ def route_create(credentials, my_csv, routes, archi, tags=None):
                 my_update_router[route_dict['vpc']] = {'router':{'routes':[]}}
             if route_dict['route']+'_'+route_dict['cidr'] not in my_rt:
                 my_rt.append(route_dict['route']+'_'+route_dict['cidr'])
-                my_update_router[route_dict['vpc']]'router']['routes'].append({'destination':route_dict['cidr'],'nexthop':routes[route_dict['route']]})
+                my_update_router[route_dict['vpc']]['router']['routes'].append({'destination':route_dict['cidr'],'nexthop':routes[route_dict['route']]})
                 print str({'destination':route_dict['cidr'],'nexthop':routes[route_dict['route']]}) + " added to router " + route_dict['vpc']+'-router'
                 
     for vpc in my_update_router.keys():

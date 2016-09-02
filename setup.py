@@ -16,7 +16,6 @@ setup(
         'json',
         'logging',
         'csv',
-        'keystoneclient',
         'python-keystoneclient',
         'python-novaclient',
         'netaddr'
