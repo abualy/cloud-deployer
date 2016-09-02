@@ -7,7 +7,7 @@ from setuptools import setup, find_packages
 
 
 setup(
-    name='cloud-deployer',
+    name='cloud_deployer',
     version='0.1.0',
     packages=find_packages(),
     install_requires=[
@@ -17,9 +17,9 @@ setup(
         'logging',
         'csv',
         'keystoneclient',
-        'neutronclient',
-        'novaclient',
+        'python-keystoneclient',
+        'python-novaclient',
         'netaddr'
     ],
-    package_data={'cloud-deployer': ['config/*.json']},
+    package_data={'cloud_deployer': ['config/*.json']},
 )

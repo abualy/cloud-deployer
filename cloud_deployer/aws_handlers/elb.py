@@ -47,7 +47,7 @@ def elb_create(awsc, my_csv, archi, tags=None):
             
         #Create ELB policies
         policy = awsc.create_lb_policy(lb_name=elb_dict['elb'], policy_name=elb_dict['policy_name'], policy_type=elb_dict['policy_type'], policy_attributes = atts)
-        print elb_dict['policy_name'] + " created with policy type " + elb_dict['policy_type'].
+        print elb_dict['policy_name'] + " created with policy type " + elb_dict['policy_type']
         
         #attach policies to corresponding elbs
         for por in string.split(elb_dict['ports'],sep='&'):

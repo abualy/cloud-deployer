@@ -21,7 +21,6 @@ def rt_create(credentials, my_csv, archi, tags=None):
         if rt_dict['route_type']!='instances':
             archi['rt'][rt_dict['vpc']+'_'+rt_dict['route_table']].append('add')
         archi['rt'][rt_dict['vpc']+'_'+rt_dict['route_table']].append(rt_dict)
-        #print rt_dict['route_table'] + " created"
     print "done creating route tables :) "
     return archi
     
@@ -32,11 +31,9 @@ def route_create(credentials, my_csv, routes, archi, tags=None):
     route_reader = csv.DictReader(route_file)
             
     print "##########################    Starting route tables creation         ###############################" 
-    # if 'route' not in archi:
-        # archi['route'] = {}
     #iterate through rows checking for routes types
     my_rt = []
-    my_update_router = {} {'subnet':{'host_routes':[]}}
+    my_update_router = {}
     for route_dict in route_reader:
         if route_dict['route_type']=='instances':
             if route_dict['vpc'] not in my_update_router:
