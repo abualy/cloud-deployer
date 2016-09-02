@@ -13,9 +13,8 @@ setup(
     install_requires=[
         'argparse',
         'boto',
-        'json',
         'logging',
-        'csv',
+        'python_neutronclient',
         'python-keystoneclient',
         'python-novaclient',
         'netaddr'
