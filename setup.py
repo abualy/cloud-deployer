@@ -13,6 +13,7 @@ setup(
     install_requires=[
         'argparse',
         'boto',
+        'pytz',
         'logging',
         'python_neutronclient',
         'python-keystoneclient',
