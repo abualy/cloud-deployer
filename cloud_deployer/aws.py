@@ -132,8 +132,6 @@ class AWS():
                 raise Exception("missing parameter: csv path")
             if ami_id is None: 
                 raise Exception("missing parameter: ami_id")
-            if puppet_env is None: 
-                raise Exception("missing parameter: puppet_env")
             self.user_data["puppet"]["environment"] = puppet_env
             self.global_architecture = instance_create(self.c, csv, self.global_architecture, ami_id, self.user_data, keys_path, self.global_tags)
             logger.info("the current architecture is "+str(self.global_architecture))                
